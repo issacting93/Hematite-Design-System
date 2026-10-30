@@ -1,0 +1,166 @@
+/* ===================================================================
+   SHOWCASE CHROME
+   Styles for this demo app only (labels, grid, topbar). The components
+   it catalogs are styled entirely by src/hematite/hematite.css — this
+   file never touches a .ht- class, only the layout around it.
+   =================================================================== */
+
+.ds-page {
+  padding-bottom: 120px;
+}
+
+.ds-topbar {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--ht-rule);
+  flex-wrap: wrap;
+}
+.ds-logo {
+  font-family: var(--ht-font-display);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: 1rem;
+}
+.ds-tagline {
+  font-family: var(--ht-font-mono);
+  font-size: 0.75rem;
+  color: var(--ht-muted);
+}
+
+.ds-intro {
+  padding: 48px 0;
+  border-bottom: 1px solid var(--ht-rule);
+  margin-bottom: 48px;
+}
+.ds-intro .ht-hero-subtitle code {
+  font-family: var(--ht-font-mono);
+  color: var(--ht-accent);
+  background: var(--ht-accent-muted);
+  padding: 0 4px;
+  border-radius: 2px;
+}
+
+.ds-section {
+  margin-bottom: 64px;
+}
+.ds-section-title {
+  font-family: var(--ht-font-display);
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--ht-rule-strong);
+  color: var(--ht-foreground);
+}
+
+/* ── Block wrapper ── */
+.ds-block {
+  margin-bottom: 40px;
+  padding: 24px;
+  border: 1px solid var(--ht-rule);
+  border-radius: 4px;
+}
+.ds-block-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 4px;
+}
+.ds-block-title {
+  font-family: var(--ht-font-display);
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--ht-foreground);
+}
+.ds-block-type {
+  font-family: var(--ht-font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--ht-muted);
+}
+.ds-block-note {
+  font-family: var(--ht-font-mono);
+  font-size: 0.8rem;
+  color: var(--ht-muted);
+  margin: 4px 0 20px;
+  max-width: 640px;
+}
+.ds-block-note code {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ── Color swatches ── */
+.ds-swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 16px;
+}
+.ds-swatch-fill {
+  height: 64px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.ds-swatch-name {
+  font-family: var(--ht-font-mono);
+  font-size: 0.8rem;
+  color: var(--ht-foreground);
+}
+.ds-swatch-value {
+  font-family: var(--ht-font-mono);
+  font-size: 0.7rem;
+  color: var(--ht-muted);
+}
+
+/* ── Type specimens ── */
+.ds-type-specimens {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ds-type-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--ht-rule);
+  padding-bottom: 16px;
+}
+.ds-type-row > *:first-child {
+  margin: 0;
+}
+
+.ds-layout-note {
+  font-family: var(--ht-font-mono);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.ds-layout-note code {
+  color: var(--ht-accent);
+}
+
+/* ── Page-pattern demos (contained, not full-bleed like a real page) ── */
+.ds-hero-demo {
+  min-height: unset;
+  padding: 0;
+}
+.ds-next-demo {
+  border-top: 1px solid var(--ht-rule);
+}
+
+.ds-footer {
+  font-family: var(--ht-font-mono);
+  font-size: 0.75rem;
+  color: var(--ht-muted);
+  padding-top: 24px;
+  border-top: 1px solid var(--ht-rule);
+}
+.ds-footer a {
+  color: var(--ht-accent);
+  text-decoration: none;
+}
+.ds-footer a:hover {
+  text-decoration: underline;
+}
